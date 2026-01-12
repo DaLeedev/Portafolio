@@ -1,4 +1,6 @@
-import React from 'react'
+import { programmingSkills, toolsSkills } from "../data/portfolioData";
+import { Lightbulb, Code2, User } from "lucide-react";
+import { SkillBar } from "../SkillBar";
 
 export const Skill = () => {
   return (
@@ -79,4 +81,4 @@ export const Skill = () => {
       </div>
     </section>
   );
-}
+};

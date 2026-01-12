@@ -1,33 +1,5 @@
-// src/data/portfolioData.js
-import { Github, Linkedin, Mail } from "lucide-react";
 
 export const personalInfo = {
-  name: "Tu Nombre",
-  role: "Desarrollador Full Stack",
-  bio: "...",
-  social: [
-    { name: "Email", icon: Mail, url: "mailto:..." },
-    { name: "GitHub", icon: Github, url: "https://github.com..." },
-    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com..." },
-  ],
-};
-
-export const projects = [
-  /* ... tus proyectos ... */
-];
-export const certificates = [
-  /* ... tus certificados ... */
-];
-export const skills = {
-  programming: [
-    /* ... */
-  ],
-  tools: [
-    /* ... */
-  ],
-
-  // ========== CONFIGURACIÓN PERSONAL - MODIFICA AQUÍ TUS DATOS ==========
-const personalInfo = {
   name: "Tu Nombre",
   role: "Desarrollador Full Stack",
   bio: "Creando experiencias digitales innovadoras con código limpio y diseño intuitivo. Especializado en desarrollo web moderno y arquitecturas escalables.",
@@ -38,7 +10,7 @@ const personalInfo = {
 };
 
 // Habilidades de programación
-const programmingSkills = [
+export const programmingSkills = [
   { name: "JavaScript", level: 90, icon: "🟨" },
   { name: "TypeScript", level: 85, icon: "🔷" },
   { name: "Python", level: 80, icon: "🐍" },
@@ -48,7 +20,7 @@ const programmingSkills = [
 ];
 
 // Herramientas y tecnologías
-const toolsSkills = [
+export const toolsSkills = [
   { name: "Git & GitHub", level: 90, icon: "📦" },
   { name: "Tailwind CSS", level: 85, icon: "🎨" },
   { name: "PostgreSQL", level: 75, icon: "🐘" },
@@ -58,7 +30,7 @@ const toolsSkills = [
 ];
 
 // Certificados
-const certificates = [
+export const certificates = [
   {
     title: "AWS Certified Solutions Architect",
     issuer: "Amazon Web Services",
@@ -110,7 +82,7 @@ const certificates = [
 ];
 // ========== FIN DE CONFIGURACIÓN PERSONAL ==========
 
-const projects = [
+export const projects = [
   {
     title: "Dashboard Analítico",
     description: "Plataforma de análisis de datos en tiempo real con visualizaciones interactivas y métricas personalizables para empresas.",

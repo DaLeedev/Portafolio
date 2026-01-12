@@ -1,4 +1,5 @@
-import React from "react";
+import { personalInfo } from "../data/portfolioData";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export const Contact = () => {
   return (

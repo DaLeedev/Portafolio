@@ -1,4 +1,6 @@
-import React from 'react'
+import { certificates } from "../data/portfolioData";
+import { Award } from "lucide-react";
+import { CertificateCard } from "../CertificateCard";
 
 export const Certificados = () => {
   return (
@@ -38,4 +40,4 @@ export const Certificados = () => {
       </div>
     </section>
   );
-}
+};
