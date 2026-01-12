@@ -1,10 +1,10 @@
-import { Navbar } from "./components/layout/Navbar";
-import { Footer } from "./components/layout/Footer";
+import { Navbar } from "./components/layouts/Navbar";
+import { Footer } from "./components/layouts/Footer";
 import { Hero } from "./components/sections/Hero";
-import { ProjectsSection } from "./components/sections/ProjectsSection";
-import { SkillsSection } from "./components/sections/SkillsSection";
-import { CertificatesSection } from "./components/sections/CertificatesSection";
-import { ContactSection } from "./components/sections/ContactSection";
+import { Projects } from "./components/sections/Projects";
+import { Skill } from "./components/sections/Skill";
+import { Certificados } from "./components/sections/Certificados";
+import { Contact } from "./components/sections/Contact";
 
 export default function App() {
   return (
@@ -13,10 +13,10 @@ export default function App() {
 
       <main>
         <Hero />
-        <CertificatesSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ContactSection />
+        <Certificados />
+        <Skill />
+        <Projects/>
+        <Contact />
       </main>
 
       <Footer />
