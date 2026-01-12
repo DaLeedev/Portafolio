@@ -1,4 +1,5 @@
-import React from "react";
+import { projects } from "../data/portfolioData";
+import { ProjectCard } from "../ProjectCard";
 
 export const Projects = () => {
   return (

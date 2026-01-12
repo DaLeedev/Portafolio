@@ -1,4 +1,5 @@
-import React from 'react'
+import { personalInfo } from "../data/portfolioData";
+import { Code2 } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -18,5 +19,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-}
-
+};

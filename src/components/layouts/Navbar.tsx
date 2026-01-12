@@ -1,6 +1,5 @@
 import { Code2 } from "lucide-react";
-// Asegúrate de importar tus datos personales si decidiste separarlos
-import { personalInfo } from "../../data/portfolioData";
+import { personalInfo } from "../data/portfolioData";
 
 export const Navbar = () => {
   // Definimos los links aquí para no ensuciar el JSX

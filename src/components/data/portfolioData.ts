@@ -1,6 +1,3 @@
-// src/data/portfolioData.js
-
-  // ========== CONFIGURACIÓN PERSONAL ==========
 
 export const personalInfo = {
   name: "Tu Nombre",
