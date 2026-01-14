@@ -5,54 +5,63 @@ import { Projects } from "./sections/Projects";
 import { Skill } from "./sections/Skill";
 import { Certificados } from "./sections/Certificados";
 import { Contact } from "./sections/Contact";
-import { Code2, BrainCircuit } from "lucide-react"; // Iconos para la bienvenida
+import { personalInfo } from "./data/portfolioData"; // Importamos para el nombre
 
-// Este componente recibe 'profile' ('web' o 'data') y muestra la web completa
-export const PortfolioLayout = ({
-  profile,
-}: {
+// Definimos los tipos para las props
+interface PortfolioLayoutProps {
   profile: "web" | "data" | null;
-}) => {
-  // 1. PANTALLA DE BIENVENIDA (Si no han elegido perfil)
+}
+
+export const PortfolioLayout = ({ profile }: PortfolioLayoutProps) => {
+  // 1. PANTALLA DE BIENVENIDA (Fondo inicial cuando no hay selección)
   if (!profile) {
     return (
       <div className="min-h-screen bg-zinc-950 flex flex-col items-center justify-center p-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 text-center">
-          Hola, soy <span className="text-purple-500">Tu Nombre</span>
-        </h1>
-        <p className="text-zinc-400 text-xl mb-12">
-          Selecciona tu experiencia:
-        </p>
-        {/* Los botones estarán en el App.tsx flotando, aquí solo mostramos el fondo */}
-        <div className="animate-pulse text-zinc-600 text-sm">
-          Esperando selección...
+        {/* Este contenido queda de fondo mientras aparecen los botones del App.tsx */}
+        <div className="text-center space-y-4 animate-in fade-in duration-1000">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
+            Hola, soy{" "}
+            <span className="text-purple-500">{personalInfo.name}</span>
+          </h1>
+          <p className="text-zinc-500 text-lg">
+            Selecciona una ruta para comenzar la experiencia
+          </p>
+          <div className="mt-8 p-2 rounded-full bg-zinc-900/50 inline-block text-zinc-600 text-xs tracking-widest uppercase border border-zinc-800">
+            Esperando input...
+          </div>
         </div>
       </div>
     );
   }
 
-  // 2. CONFIGURACIÓN DE COLORES SEGÚN PERFIL
+  // 2. CONFIGURACIÓN DE TEMA SEGÚN PERFIL
   const isWeb = profile === "web";
-  const theme = {
-    // Si es Web: Fondo Zinc oscuro. Si es Data: Fondo Slate (un poco más azulado)
-    bg: isWeb ? "bg-zinc-950" : "bg-slate-950",
-    selection: isWeb
-      ? "selection:bg-emerald-500 selection:text-white"
-      : "selection:bg-cyan-500 selection:text-white",
-  };
+
+  // Clases dinámicas para el contenedor principal
+  const themeClasses = isWeb
+    ? "bg-zinc-950 selection:bg-emerald-500 selection:text-white"
+    : "bg-slate-950 selection:bg-cyan-500 selection:text-white";
 
   return (
-    <div className={`min-h-screen ${theme.bg} text-white ${theme.selection}`}>
-      {/* Pasamos el perfil a la Navbar para que cambie el color del logo */}
+    <div
+      className={`min-h-screen text-white transition-colors duration-700 ${themeClasses}`}
+    >
+      {/* Navbar fija */}
       <Navbar />
 
       <main>
-        {/* Pasamos el perfil a las secciones que necesiten cambiar texto/color */}
-        {/* Por ahora las renderizamos normal, luego les pasaremos props */}
-        <Hero />
-        <Certificados />
-        <Skill />
-        <Projects />
+        {/* AQUÍ ESTÁ LA CLAVE:
+           Pasamos 'profile' a cada sección para que sepan qué contenido mostrar
+        */}
+
+        <Hero currentProfile={profile} />
+
+        <Certificados currentProfile={profile} />
+
+        <Skill currentProfile={profile} />
+
+        <Projects currentProfile={profile} />
+
         <Contact />
       </main>
 
