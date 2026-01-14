@@ -9,13 +9,13 @@ interface CertificateCardProps {
   area: string;
 }
 
-export function CertificateCard({ 
-  title, 
-  issuer, 
-  date, 
+export function CertificateCard({
+  title,
+  issuer,
+  date,
   description,
   credentialUrl,
-  area 
+  area
 }: CertificateCardProps) {
   return (
     <div className="bg-zinc-900 rounded-xl p-6 border border-zinc-800 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 group">
@@ -43,13 +43,13 @@ export function CertificateCard({
           </a>
         )}
       </div>
-      
+
       {description && (
         <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
           {description}
         </p>
       )}
-      
+
       <div className="flex items-center justify-between pt-4 border-t border-zinc-800">
         <div className="flex items-center gap-2 text-zinc-500 text-sm">
           <Calendar className="w-4 h-4" />
