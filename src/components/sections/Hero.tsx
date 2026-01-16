@@ -17,7 +17,7 @@ export const Hero = ({ currentProfile }: HeroProps) => {
       ? "from-emerald-600 to-green-600"
       : currentProfile === "data"
       ? "from-blue-600 to-cyan-600"
-      : "from-zinc-700 to-zinc-800";
+      : "from-purple-700 to-pink-700";
 
   return (
     <section className="pt-32 pb-10 px-4 sm:px-6 lg:px-8">
@@ -27,7 +27,6 @@ export const Hero = ({ currentProfile }: HeroProps) => {
           <div className="animate-in slide-in-from-left duration-700">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800/50 border border-zinc-700 rounded-full mb-6">
               {currentProfile ? (
-                // Usamos clases 'purple' que nuestro App.tsx transformará mágicamente
                 <Briefcase className="w-4 h-4 text-purple-400" />
               ) : (
                 <HelpCircle className="w-4 h-4 text-zinc-400" />
@@ -39,7 +38,7 @@ export const Hero = ({ currentProfile }: HeroProps) => {
               </span>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-white">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-linear-to-r from-white to-purple-400 bg-clip-text text-transparent">
               {personalInfo.name}
             </h1>
 
@@ -49,7 +48,7 @@ export const Hero = ({ currentProfile }: HeroProps) => {
               {activeData ? activeData.role : "Rol por definir..."}
             </h2>
 
-            <p className="text-xl text-zinc-400 leading-relaxed mb-8 min-h-[6rem]">
+            <p className="text-xl text-zinc-400 leading-relaxed mb-8 min-h-24">
               {activeData
                 ? activeData.bio
                 : "¿Qué versión de mi experiencia te interesa conocer hoy? Selecciona una opción abajo para revelar mi portafolio."}
@@ -76,14 +75,14 @@ export const Hero = ({ currentProfile }: HeroProps) => {
 
           <div className="flex justify-center lg:justify-end animate-in slide-in-from-right duration-700 ">
             {/* Contenedor: Define el tamaño para TODO (Brillo + Imagen) */}
-            <div className="relative w-80 h-80 sm:w-[450px] sm:h-[450px] lg:w-[500px] lg:h-[500px] flex items-center justify-center ">
+            <div className="relative w-70 h-70 sm:w-112.5 sm:h-112.5 lg:w-90 lg:h-90 flex items-center justify-center">
               <div
-                className={`absolute inset-12 bg-gradient-to-r ${glowColor} rounded-full blur-[100px] opacity-75 group-hover:opacity-100 transition duration-1000 animate-pulse z-0`}
+                className={`absolute inset-12 bg-linear-to-r ${glowColor} rounded-full blur-[100px] group-hover:opacity-100 transition duration-1000 animate-pulse z-0 `}
               ></div>
 
               {/* EL CÍRCULO DE LA IMAGEN */}
               {/* Usamos w-full h-full para que ocupe exactamente el mismo espacio que el brillo */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-zinc-800 bg-zinc-900 shadow-2xl z-10">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-zinc-800 bg-zinc-900 shadow-2xl z-10 hover:border-purple-400/40 transition-all duration-500 group">
                 {personalInfo.profileImage ? (
                   <img
                     src={personalInfo.profileImage}
@@ -91,7 +90,7 @@ export const Hero = ({ currentProfile }: HeroProps) => {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-900">
+                  <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-zinc-800 to-zinc-900">
                     <User
                       className="w-48 h-48 sm:w-64 sm:h-64 text-purple-400/50"
                       strokeWidth={1}
