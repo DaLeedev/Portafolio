@@ -75,26 +75,30 @@ export default function App() {
                   </h3>
 
                   {/* Contenedor de Tecnologías: React, Laravel, Bootstrap, Sass */}
-                  <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                  <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out">
                     <Icon
                       icon="logos:laravel"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
                       icon="logos:bootstrap"
-                      className="w-7 h-7 transition-transform duration-500 scale-110 group-hover:scale-120"
+                      className="w-7 h-7 transition-transform duration-200 scale-110 group-hover:scale-120"
                     />
                     <Icon
-                      icon="logos:sass"
-                      className="w-7 h-7 transition-transform duration-500 scale-110 group-hover:scale-120"
+                      icon="logos:tailwindcss-icon"
+                      className="w-7 h-7 transition-transform duration-200 scale-110 group-hover:scale-120"
                     />
                     <Icon
                       icon="logos:javascript"
-                      className="w-7 h-7 transition-transform duration-500 scale-85 group-hover:scale-100"
+                      className="w-7 h-7 transition-transform duration-200 scale-85 group-hover:scale-100"
+                    />
+                    <Icon
+                      icon="logos:mysql"
+                      className="w-7 h-7 transition-transform duration-200 scale-120 group-hover:scale-130"
                     />
                     <Icon
                       icon="logos:react"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                   </div>
                 </button>
@@ -110,19 +114,23 @@ export default function App() {
                   <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
                     <Icon
                       icon="logos:python"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
                       icon="logos:jupyter"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
+                    />
+                    <Icon
+                      icon="logos:azure"
+                      className="w-9 h-7 transition-transform duration-200 scale-140 group-hover:scale-150"
                     />
                     <Icon
                       icon="logos:microsoft-power-bi"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 scale-90 group-hover:scale-100"
                     />
                     <Icon
-                      icon="logos:mysql"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      icon="logos:fastapi"
+                      className="w-9 h-7 transition-transform duration-200 scale-140 group-hover:scale-150"
                     />
                   </div>
                 </button>
