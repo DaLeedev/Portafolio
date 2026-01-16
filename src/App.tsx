@@ -48,12 +48,11 @@ export default function App() {
         >
           {/* Si NO hay perfil, mostramos botones grandes */}
           {!profile && (
-            <div className="max-w-4xl mx-auto text-center animate-in fade-in zoom-in duration-500">
+            <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8 flex justify-center">
                 <div
                   className="inline-flex flex-col items-center gap-1
-                  rounded-xl bg-red-400 px-4 py-2
-                  animate-bounce"
+                  rounded-xl bg-purple-400 px-4 py-2"
                 >
                   <ChevronDown className="text-zinc-500" />
                   <p className="text-zinc-500 text-sm">Selecciona un Perfil</p>
