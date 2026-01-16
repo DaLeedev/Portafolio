@@ -11,7 +11,6 @@ import { Code2, BrainCircuit, ChevronDown } from "lucide-react";
 export default function App() {
   const [profile, setProfile] = useState<"web" | "data" | null>(null);
 
-  // --- TRUCO DE COLORES DINÁMICOS ---
   // Sobrescribimos las variables de tu CSS purple por las nuevas
   const getThemeStyles = () => {
     if (profile === "web") {
@@ -20,35 +19,28 @@ export default function App() {
         "--color-purple-400": "oklch(.792 .209 151.711)",
         "--color-purple-500": "oklch(.723 .219 149.579)", // Color principal
         "--color-purple-600": "oklch(.627 .194 149.214)",
-        "--color-purple-900": "oklch(.21 .006 285.885)", // Opcional cambiar fondos
       } as React.CSSProperties;
     }
     if (profile === "data") {
       return {
-        // Reemplazamos los purples por tonos AZULES (Blue/Cyan)
         "--color-purple-400": "oklch(.707 .165 254.624)",
-        "--color-purple-500": "oklch(.623 .214 259.815)", // Color principal
+        "--color-purple-500": "oklch(.623 .214 259.815)",
         "--color-purple-600": "oklch(.546 .245 262.881)",
       } as React.CSSProperties;
     }
-    return {}; // Si es null (inicio), usa el purple original de tu CSS
+    return {};
   };
 
   return (
     // Aplicamos los estilos dinámicos al contenedor principal
     <div
-      className="min-h-screen bg-zinc-950 text-white transition-colors duration-1000"
+      className="min-h-screen bg-zinc-950 text-white transition-all duration-700 ease-in-out"
       style={getThemeStyles()}
     >
       <Navbar />
 
       <main>
-        {/* 1. HERO (Le pasamos el perfil) */}
         <Hero currentProfile={profile} />
-
-        {/* 2. SELECTOR DE PERFIL (Solo visible al inicio) */}
-        {/* Usamos 'hidden' en lugar de desmontarlo si quieres conservar la altura,
-            o renderizado condicional si prefieres que desaparezca */}
         <section
           className={`py-12 px-4 transition-all duration-700 ${
             profile ? "opacity-100" : "min-h-[40vh]"
@@ -57,9 +49,15 @@ export default function App() {
           {/* Si NO hay perfil, mostramos botones grandes */}
           {!profile && (
             <div className="max-w-4xl mx-auto text-center animate-in fade-in zoom-in duration-500">
-              <div className="mb-8 animate-bounce">
-                <ChevronDown className="mx-auto text-zinc-500" />
-                <p className="text-zinc-500 text-sm">Selecciona tu camino</p>
+              <div className="mb-8 flex justify-center">
+                <div
+                  className="inline-flex flex-col items-center gap-1
+                  rounded-xl bg-red-400 px-4 py-2
+                  animate-bounce"
+                >
+                  <ChevronDown className="text-zinc-500" />
+                  <p className="text-zinc-500 text-sm">Selecciona un Perfil</p>
+                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-8 justify-center">
@@ -90,7 +88,6 @@ export default function App() {
             </div>
           )}
 
-          {/* BOTÓN FLOTANTE PARA CAMBIAR (Solo si YA hay perfil) */}
           {profile && (
             <div className="flex justify-center mt-8 border-b border-zinc-800 pb-8">
               <button
@@ -103,14 +100,8 @@ export default function App() {
           )}
         </section>
 
-        {/* 3. CONTENIDO REAL (Skills, Proyectos, Certs) */}
-        {/* Solo se muestran si hay perfil */}
         {profile && (
           <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
-            {/* NOTA: En tus componentes Project, Skill, etc., usa las clases normales
-               como 'text-purple-500' o 'border-purple-500'.
-               Gracias a 'getThemeStyles', el navegador pintará VERDE o AZUL automáticamente.
-            */}
             <Certificados currentProfile={profile} />
             <Skill currentProfile={profile} />
             <Projects currentProfile={profile} />
