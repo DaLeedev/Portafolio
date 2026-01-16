@@ -6,7 +6,12 @@ import { Projects } from "./components/sections/Projects";
 import { Skill } from "./components/sections/Skill";
 import { Certificados } from "./components/sections/Certificados";
 import { Contact } from "./components/sections/Contact";
-import { Code2, BrainCircuit, ChevronDown } from "lucide-react";
+import {
+  Code2,
+  BrainCircuit,
+  ChevronDown,
+} from "lucide-react";
+import { Icon } from "@iconify/react";
 
 export default function App() {
   const [profile, setProfile] = useState<"web" | "data" | null>(null);
@@ -50,38 +55,76 @@ export default function App() {
           {!profile && (
             <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8 flex justify-center">
-                <div
-                  className="inline-flex flex-col items-center gap-1
-                  rounded-xl bg-purple-400 px-4 py-2"
-                >
-                  <ChevronDown className="text-zinc-500" />
-                  <p className="text-zinc-500 text-sm">Selecciona un Perfil</p>
+                <div className="inline-flex flex-col items-center gap-2">
+                  {/* El icono con la animación de rebote */}
+                  <ChevronDown className="text-purple-400 w-6 h-6 animate-bounce" />
+                  <p className="text-zinc-500 text-sm font-medium tracking-wide uppercase">
+                    Selecciona un perfil
+                  </p>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-8 justify-center">
                 <button
                   onClick={() => setProfile("web")}
-                  className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-green-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 w-full sm:w-72"
+                  className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800  transition-all duration-500 w-full sm:w-80 cursor-pointer overflow-hidden flex flex-col items-center"
                 >
-                  <Code2 className="w-16 h-16 text-zinc-600 group-hover:text-green-500 mx-auto mb-4 transition-colors" />
-                  <h3 className="text-2xl font-bold group-hover:text-green-400">
-                    Desarrollo Web
+                  {/* Título */}
+                  <h3 className="text-xl font-semibold text-gray-200 transition-colors duration-500 text-center leading-tight">
+                    Desarrollo Web Full Stack
                   </h3>
-                  <p className="text-zinc-500 mt-2">
-                    React, Laravel & Arquitectura
-                  </p>
+
+                  {/* Contenedor de Tecnologías: React, Laravel, Bootstrap, Sass */}
+                  <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                    <Icon
+                      icon="logos:laravel"
+                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <Icon
+                      icon="logos:bootstrap"
+                      className="w-7 h-7 transition-transform duration-500 scale-110 group-hover:scale-120"
+                    />
+                    <Icon
+                      icon="logos:sass"
+                      className="w-7 h-7 transition-transform duration-500 scale-110 group-hover:scale-120"
+                    />
+                    <Icon
+                      icon="logos:javascript"
+                      className="w-7 h-7 transition-transform duration-500 scale-85 group-hover:scale-100"
+                    />
+                    <Icon
+                      icon="logos:react"
+                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
                 </button>
 
                 <button
                   onClick={() => setProfile("data")}
-                  className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-blue-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.3)] transition-all duration-300 w-full sm:w-72"
+                  className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800  transition-all duration-500 w-full sm:w-80 cursor-pointer overflow-hidden flex flex-col items-center"
                 >
-                  <BrainCircuit className="w-16 h-16 text-zinc-600 group-hover:text-blue-500 mx-auto mb-4 transition-colors" />
-                  <h3 className="text-2xl font-bold group-hover:text-blue-400">
-                    Ciencia de Datos
+                  <h3 className="text-xl font-semibold text-gray-200 transition-colors duration-500 text-center leading-tight">
+                    Ciencia de Datos, ML & IA Aplicada
                   </h3>
-                  <p className="text-zinc-500 mt-2">ML, Python & IA</p>
+
+                  <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                    <Icon
+                      icon="logos:python"
+                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <Icon
+                      icon="logos:jupyter"
+                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <Icon
+                      icon="logos:microsoft-power-bi"
+                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <Icon
+                      icon="logos:mysql"
+                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
                 </button>
               </div>
             </div>
