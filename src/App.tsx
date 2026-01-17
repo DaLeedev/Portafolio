@@ -6,11 +6,7 @@ import { Projects } from "./components/sections/Projects";
 import { Skill } from "./components/sections/Skill";
 import { Certificados } from "./components/sections/Certificados";
 import { Contact } from "./components/sections/Contact";
-import {
-  Code2,
-  BrainCircuit,
-  ChevronDown,
-} from "lucide-react";
+import { ChevronDown, ChevronLeft } from "lucide-react";
 import { Icon } from "@iconify/react";
 
 export default function App() {
@@ -44,15 +40,20 @@ export default function App() {
     >
       <Navbar />
 
-      <main>
-        <Hero currentProfile={profile} />
-        <section
-          className={`py-12 px-4 transition-all duration-700 ${
-            profile ? "opacity-100" : "min-h-[40vh]"
-          }`}
+      <main className="overflow-hidden">
+        <div
+          key={profile ? "selected" : "none"}
+          className="animate-fade-in-right duration-700"
         >
-          {/* Si NO hay perfil, mostramos botones grandes */}
-          {!profile && (
+          <Hero currentProfile={profile} />
+        </div>
+        {/* Si NO hay perfil, mostramos botones grandes */}
+        {!profile ? (
+          <section
+            className={`py-12 px-4 transition-all duration-700 animate-fade-in-up ${
+              profile ? "opacity-100" : "min-h-[40vh]"
+            }`}
+          >
             <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8 flex justify-center">
                 <div className="inline-flex flex-col items-center gap-2">
@@ -75,26 +76,30 @@ export default function App() {
                   </h3>
 
                   {/* Contenedor de Tecnologías: React, Laravel, Bootstrap, Sass */}
-                  <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                  <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out">
                     <Icon
                       icon="logos:laravel"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
                       icon="logos:bootstrap"
-                      className="w-7 h-7 transition-transform duration-500 scale-110 group-hover:scale-120"
+                      className="w-7 h-7 transition-transform duration-200 scale-110 group-hover:scale-120"
                     />
                     <Icon
-                      icon="logos:sass"
-                      className="w-7 h-7 transition-transform duration-500 scale-110 group-hover:scale-120"
+                      icon="logos:tailwindcss-icon"
+                      className="w-7 h-7 transition-transform duration-200 scale-110 group-hover:scale-120"
                     />
                     <Icon
                       icon="logos:javascript"
-                      className="w-7 h-7 transition-transform duration-500 scale-85 group-hover:scale-100"
+                      className="w-7 h-7 transition-transform duration-200 scale-85 group-hover:scale-100"
+                    />
+                    <Icon
+                      icon="logos:mysql"
+                      className="w-7 h-7 transition-transform duration-200 scale-120 group-hover:scale-130"
                     />
                     <Icon
                       icon="logos:react"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                   </div>
                 </button>
@@ -110,48 +115,50 @@ export default function App() {
                   <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
                     <Icon
                       icon="logos:python"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
                       icon="logos:jupyter"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
+                    />
+                    <Icon
+                      icon="logos:azure"
+                      className="w-9 h-7 transition-transform duration-200 scale-140 group-hover:scale-150"
                     />
                     <Icon
                       icon="logos:microsoft-power-bi"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      className="w-7 h-7 transition-transform duration-200 scale-90 group-hover:scale-100"
                     />
                     <Icon
-                      icon="logos:mysql"
-                      className="w-7 h-7 transition-transform duration-500 group-hover:scale-110"
+                      icon="logos:fastapi"
+                      className="w-9 h-7 transition-transform duration-200 scale-140 group-hover:scale-150"
                     />
                   </div>
                 </button>
               </div>
             </div>
-          )}
-
-          {profile && (
-            <div className="flex justify-center mt-8 border-b border-zinc-800 pb-8">
+          </section>
+        ) : (
+          <div className="animate-fade-in-up">
+            <div className="flex justify-center mt-8 sticky top-20 z-10 border-zinc-800 pb-8">
               <button
                 onClick={() => setProfile(null)}
-                className="text-sm text-zinc-500 hover:text-white underline"
+                className="group px-6 py-2.5 bg-zinc-900/80 border border-purple-400/60 hover:border-purple-500/50 text-zinc-400 hover:text-purple-400 rounded-full transition-all duration-300 backdrop-blur-md flex items-center gap-3 shadow-2xl cursor-pointer"
               >
-                ← Cambiar Perfil
+                <ChevronLeft className="w-5 h-5 animate-bounce-left" />
+                <span>Cambiar Perfil</span>
               </button>
             </div>
-          )}
-        </section>
 
-        {profile && (
-          <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
-            <Certificados currentProfile={profile} />
-            <Skill currentProfile={profile} />
-            <Projects currentProfile={profile} />
-            <Contact />
+            <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
+              <Certificados currentProfile={profile} />
+              <Skill currentProfile={profile} />
+              <Projects currentProfile={profile} />
+              <Contact />
+            </div>
           </div>
         )}
       </main>
-
       <Footer />
     </div>
   );
