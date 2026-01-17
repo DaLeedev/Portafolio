@@ -6,11 +6,7 @@ import { Projects } from "./components/sections/Projects";
 import { Skill } from "./components/sections/Skill";
 import { Certificados } from "./components/sections/Certificados";
 import { Contact } from "./components/sections/Contact";
-import {
-  Code2,
-  BrainCircuit,
-  ChevronDown,
-} from "lucide-react";
+import { ChevronDown, ChevronLeft } from "lucide-react";
 import { Icon } from "@iconify/react";
 
 export default function App() {
@@ -46,13 +42,13 @@ export default function App() {
 
       <main>
         <Hero currentProfile={profile} />
-        <section
-          className={`py-12 px-4 transition-all duration-700 ${
-            profile ? "opacity-100" : "min-h-[40vh]"
-          }`}
-        >
-          {/* Si NO hay perfil, mostramos botones grandes */}
-          {!profile && (
+        {/* Si NO hay perfil, mostramos botones grandes */}
+        {!profile ? (
+          <section
+            className={`py-12 px-4 transition-all duration-700 animate-fade-in-up ${
+              profile ? "opacity-100" : "min-h-[40vh]"
+            }`}
+          >
             <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8 flex justify-center">
                 <div className="inline-flex flex-col items-center gap-2">
@@ -136,30 +132,28 @@ export default function App() {
                 </button>
               </div>
             </div>
-          )}
-
-          {profile && (
-            <div className="flex justify-center mt-8 border-b border-zinc-800 pb-8">
+          </section>
+        ) : (
+          <div className="animate-fade-in-up">
+            <div className="flex justify-center mt-8 sticky top-20 z-10 border-zinc-800 pb-8">
               <button
                 onClick={() => setProfile(null)}
-                className="text-sm text-zinc-500 hover:text-white underline"
+                className="group px-6 py-2.5 bg-zinc-900/80 border border-purple-400/60 hover:border-purple-500/50 text-zinc-400 hover:text-white rounded-full transition-all duration-300 backdrop-blur-md flex items-center gap-3 shadow-2xl cursor-pointer"
               >
-                ← Cambiar Perfil
+                <ChevronLeft className="w-5 h-5 animate-bounce-left" />
+                <span>Cambiar Perfil</span>
               </button>
             </div>
-          )}
-        </section>
 
-        {profile && (
-          <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
-            <Certificados currentProfile={profile} />
-            <Skill currentProfile={profile} />
-            <Projects currentProfile={profile} />
-            <Contact />
+            <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
+              <Certificados currentProfile={profile} />
+              <Skill currentProfile={profile} />
+              <Projects currentProfile={profile} />
+              <Contact />
+            </div>
           </div>
         )}
       </main>
-
       <Footer />
     </div>
   );
