@@ -40,8 +40,13 @@ export default function App() {
     >
       <Navbar />
 
-      <main>
-        <Hero currentProfile={profile} />
+      <main className="overflow-hidden">
+        <div
+          key={profile ? "selected" : "none"}
+          className="animate-fade-in-right duration-700"
+        >
+          <Hero currentProfile={profile} />
+        </div>
         {/* Si NO hay perfil, mostramos botones grandes */}
         {!profile ? (
           <section
@@ -138,7 +143,7 @@ export default function App() {
             <div className="flex justify-center mt-8 sticky top-20 z-10 border-zinc-800 pb-8">
               <button
                 onClick={() => setProfile(null)}
-                className="group px-6 py-2.5 bg-zinc-900/80 border border-purple-400/60 hover:border-purple-500/50 text-zinc-400 hover:text-white rounded-full transition-all duration-300 backdrop-blur-md flex items-center gap-3 shadow-2xl cursor-pointer"
+                className="group px-6 py-2.5 bg-zinc-900/80 border border-purple-400/60 hover:border-purple-500/50 text-zinc-400 hover:text-purple-400 rounded-full transition-all duration-300 backdrop-blur-md flex items-center gap-3 shadow-2xl cursor-pointer"
               >
                 <ChevronLeft className="w-5 h-5 animate-bounce-left" />
                 <span>Cambiar Perfil</span>
