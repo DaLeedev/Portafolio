@@ -24,6 +24,7 @@ export default function App() {
     }
     if (profile === "data") {
       return {
+        "--color-purple-300": "oklch(.820 .100 254.624)",
         "--color-purple-400": "oklch(.707 .165 254.624)",
         "--color-purple-500": "oklch(.623 .214 259.815)",
         "--color-purple-600": "oklch(.546 .245 262.881)",

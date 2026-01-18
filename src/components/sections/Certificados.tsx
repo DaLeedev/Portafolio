@@ -20,7 +20,7 @@ export const Certificados = ({ currentProfile }: CertificadosProps) => {
         <div className="mb-16 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full mb-6">
             <Award className="w-4 h-4 text-purple-400" />
-            <span className="text-purple-300 text-sm">
+            <span className="text-purple-400 text-sm">
               Certificaciones Profesionales
             </span>
           </div>
