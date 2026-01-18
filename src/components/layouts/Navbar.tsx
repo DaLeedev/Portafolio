@@ -18,7 +18,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-purple-500" />
             <span className="font-semibold text-lg text-white">
-              {personalInfo.name}
+              DaLeedev
             </span>
           </div>
 

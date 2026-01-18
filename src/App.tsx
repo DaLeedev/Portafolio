@@ -35,12 +35,12 @@ export default function App() {
   return (
     // Aplicamos los estilos dinámicos al contenedor principal
     <div
-      className="min-h-screen bg-zinc-950 text-white transition-all duration-700 ease-in-out"
+      className="min-h-screen bg-zinc-950 text-white transition-all duration-700 ease-in-out overflow-x-hidden"
       style={getThemeStyles()}
     >
       <Navbar />
 
-      <main className="overflow-hidden">
+      <main>
         <div
           key={profile ? "selected" : "none"}
           className="animate-fade-in-right duration-700"

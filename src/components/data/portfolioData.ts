@@ -3,21 +3,21 @@
 
 // 1. INFORMACIÓN PERSONAL (Doble personalidad)
 export const personalInfo = {
-  name: "Tu Nombre",
+  name: "Luis David Lemus Perea",
   profiles: {
     web: {
       role: "Desarrollador Full Stack",
       bio: "Especialista en arquitecturas escalables con React y Laravel. Me enfoco en código limpio y UX.",
     },
     data: {
-      role: "Científico de Datos & ML",
+      role: "Desarrollador de IA y Datos",
       bio: "Transformo datos en decisiones. Experto en modelos predictivos, Python y visualización.",
-    }
+    },
   },
   social: {
     email: "tu@email.com",
     github: "github.com/...",
-    linkedin: "linkedin.com/..."
+    linkedin: "linkedin.com/...",
   },
   profileImage: "",
   email: "tu-email@ejemplo.com",
@@ -49,15 +49,22 @@ export const projects = {
       description: "Tienda online completa con pasarela de pagos.",
       technologies: ["Next.js", "Stripe", "PostgreSQL"],
       image: "url_img_web_1",
-      link: "#"
+      link: "#",
     },
     {
       title: "Dashboard SaaS",
       description: "Panel administrativo para gestión de usuarios.",
       technologies: ["React", "Laravel", "Tremor"],
       image: "url_img_web_2",
-      link: "#"
-    }
+      link: "#",
+    },
+    {
+      title: "Dashboard SaaS",
+      description: "Panel administrativo para gestión de usuarios.",
+      technologies: ["React", "Laravel", "Tremor"],
+      image: "url_img_web_2",
+      link: "#",
+    },
   ],
   data: [
     {
@@ -65,34 +72,119 @@ export const projects = {
       description: "Modelo de ML para predecir mercado inmobiliario.",
       technologies: ["Python", "Scikit-Learn", "Matplotlib"],
       image: "url_img_data_1",
-      link: "#"
+      link: "#",
     },
     {
       title: "Chatbot IA Generativa",
       description: "Bot de atención al cliente usando LLMs.",
       technologies: ["OpenAI API", "LangChain", "FastAPI"],
       image: "url_img_data_2",
-      link: "#"
-    }
-  ]
+      link: "#",
+    },
+    {
+      title: "Chatbot IA Generativa",
+      description: "Bot de atención al cliente usando LLMs.",
+      technologies: ["OpenAI API", "LangChain", "FastAPI"],
+      image: "url_img_data_2",
+      link: "#",
+    },
+    {
+      title: "Chatbot IA Generativa",
+      description: "Bot de atención al cliente usando LLMs.",
+      technologies: ["OpenAI API", "LangChain", "FastAPI"],
+      image: "url_img_data_2",
+      link: "#",
+    },
+
+  ],
 };
 
 // 4. CERTIFICADOS (Separados)
 export const certificates = {
   web: [
-    { title: "Meta Frontend Developer"},
-    {description: "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS."},
-    {credentialUrl: "#"},
-    {issuer: "Amazon Web Services"},
-    {date: "Noviembre 2025"}
+    {
+      title: "Meta Frontend Developer",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "Meta Frontend Developer",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
   ],
   data: [
-    { title: "IBM Data Science"},
-    {description: "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS."},
-    {credentialUrl: "#"},
-    {issuer: "Amazon Web Services"},
-    {date: "Noviembre 2025"}
-  ]
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+    {
+      title: "IBM Data Science",
+      description:
+        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+      credentialUrl: "#",
+      issuer: "Amazon Web Services",
+      date: "Noviembre 2025",
+    },
+  ],
 };
 
 
