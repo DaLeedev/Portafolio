@@ -1,5 +1,4 @@
 
-// src/data/portfolioData.ts
 
 // 1. INFORMACIÓN PERSONAL (Doble personalidad)
 export const personalInfo = {
@@ -28,17 +27,27 @@ export const personalInfo = {
 // 2. SKILLS (Separadas)
 export const skills = {
   web: [
-    { name: "React", level: 95, icon: "⚛️" },
-    { name: "Laravel", level: 90, icon: "🔴" },
-    { name: "Tailwind CSS", level: 90, icon: "🎨" },
-    { name: "TypeScript", level: 85, icon: "🔷" },
+    { name: "React", level: 90, icon: "logos:react" },
+    { name: "Laravel", level: 85, icon: "logos:laravel" },
+    { name: "Tailwind CSS", level: 90, icon: "logos:tailwindcss-icon" },
+    { name: "MySQL", level: 85, icon: "logos:mysql-icon" },
+    { name: "Sass / SCSS", level: 80, icon: "logos:sass" },
+    { name: "JavaScript", level: 85, icon: "logos:javascript" },
   ],
   data: [
-    { name: "Python", level: 50, icon: "🐍" },
-    { name: "TensorFlow", level: 80, icon: "🧠" },
-    { name: "Pandas", level: 90, icon: "🐼" },
-    { name: "SQL", level: 85, icon: "🗃️" },
-  ]
+    // Lenguaje Base
+    { name: "Python", level: 85, icon: "logos:python" },
+    { name: "TensorFlow / Keras", level: 75, icon: "logos:tensorflow" },
+    { name: "Scikit-learn", level: 80, icon: "simple-icons:scikitlearn" },
+    { name: "Pandas & NumPy", level: 90, icon: "logos:pandas-icon" },
+    { name: "FastAPI", level: 70, icon: "logos:fastapi-icon" },
+    { name: "SQL (MySQL/PostgreSQL)", level: 85, icon: "logos:mysql-icon" },
+    { name: "Power BI", level: 75, icon: "logos:microsoft-power-bi" },
+    { name: "Azure Services", level: 60, icon: "logos:microsoft-azure" },
+    { name: "Git & GitHub", level: 80, icon: "mdi:github" },
+    { name: "Docker", level: 65, icon: "logos:docker-icon" },
+    { name: "Postman", level: 85, icon: "logos:postman-icon" },
+  ],
 };
 
 // 3. PROYECTOS (Separados)
@@ -95,7 +104,6 @@ export const projects = {
       image: "url_img_data_2",
       link: "#",
     },
-
   ],
 };
 
@@ -186,12 +194,6 @@ export const certificates = {
     },
   ],
 };
-
-
-
-
-
-
 
 // export const personalInfo = {
 //   name: "Tu Nombre",
