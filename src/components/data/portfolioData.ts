@@ -11,17 +11,17 @@ export const personalInfo = {
     },
     data: {
       role: "Desarrollador de IA y Datos",
-      bio: "Transformo datos en decisiones. Experto en modelos predictivos, Python y visualización.",
+      bio: "Aplico técnicas de datos e IA aplicada para resolver problemas reales. Tengo experiencia entrenando modelos predictivos, desplegando soluciones y visualizando datos con Python y Power BI.",
     },
   },
   social: {
     email: "tu@email.com",
-    github: "github.com/...",
+    github: "github.com/DaLeedev",
     linkedin: "linkedin.com/...",
   },
   profileImage: "",
   email: "tu-email@ejemplo.com",
-  github: "https://github.com/tu-usuario",
+  github: "https://github.com/DaLeedev",
   linkedin: "https://linkedin.com/in/tu-perfil",
 };
 
@@ -34,7 +34,7 @@ export const skills = {
     { name: "TypeScript", level: 85, icon: "🔷" },
   ],
   data: [
-    { name: "Python", level: 95, icon: "🐍" },
+    { name: "Python", level: 50, icon: "🐍" },
     { name: "TensorFlow", level: 80, icon: "🧠" },
     { name: "Pandas", level: 90, icon: "🐼" },
     { name: "SQL", level: 85, icon: "🗃️" },

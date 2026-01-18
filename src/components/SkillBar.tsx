@@ -12,7 +12,7 @@ function getSkillLevel(level: number): { label: string; color: string } {
 
 export function SkillBar({ name, level, icon }: SkillBarProps) {
   const skillLevel = getSkillLevel(level);
-  
+
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
@@ -24,12 +24,12 @@ export function SkillBar({ name, level, icon }: SkillBarProps) {
           <span className={`text-sm font-semibold ${skillLevel.color}`}>
             {skillLevel.label}
           </span>
-          <span className="text-purple-400 text-sm font-semibold">{level}%</span>
+          <span className="text-purple-400 text-sm font-semibold">-.-</span>
         </div>
       </div>
       <div className="relative h-2 bg-zinc-800 rounded-full overflow-hidden">
-        <div 
-          className="absolute top-0 left-0 h-full bg-gradient-to-r from-purple-600 to-purple-400 rounded-full transition-all duration-1000 ease-out"
+        <div
+          className="absolute top-0 left-0 h-full bg-linear-to-r from-purple-600 to-purple-400 rounded-full transition-all duration-1000 ease-out"
           style={{ width: `${level}%` }}
         >
           <div className="absolute inset-0 bg-white/20 animate-pulse" />
