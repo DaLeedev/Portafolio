@@ -56,7 +56,7 @@ export const Skill = ({ currentProfile }: SkillProps) => {
                 </p>
               </div>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-6">
               {mainSkills.map((skill, index) => (
                 <SkillBar
                   key={skill.name} // Usar name como key es mejor que index
@@ -83,7 +83,7 @@ export const Skill = ({ currentProfile }: SkillProps) => {
                 </p>
               </div>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-6">
               {secondarySkills.map((skill, index) => (
                 <SkillBar
                   key={skill.name}

@@ -1,5 +1,5 @@
 import { Code2 } from "lucide-react";
-import { personalInfo } from "../data/portfolioData";
+import { Icon } from "@iconify/react";
 
 export const Navbar = () => {
   // Definimos los links aquí para no ensuciar el JSX
@@ -15,12 +15,15 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Nombre */}
-          <div className="flex items-center gap-2">
-            <Code2 className="w-6 h-6 text-purple-500" />
-            <span className="font-semibold text-lg text-white">
-              {personalInfo.name}
-            </span>
-          </div>
+          <a
+            href="https://github.com/DaLeedev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 cursor-pointer text-white hover:text-purple-400/80 transition-colors duration-300"
+          >
+            <Icon icon="mdi:github" className="w-8 h-8" />
+            <span className="font-semibold text-lg">DaLeedev</span>
+          </a>
 
           {/* Enlaces de navegación */}
           <div className="flex items-center gap-4">

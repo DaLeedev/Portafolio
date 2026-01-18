@@ -45,7 +45,7 @@ export const Hero = ({ currentProfile }: HeroProps) => {
             <h2
               className={`text-2xl mb-4 font-medium h-8 transition-all duration-500 text-purple-400`}
             >
-              {activeData ? activeData.role : "Rol por definir..."}
+              {activeData ? activeData.role : "Ingeniero de Sistemas"}
             </h2>
 
             <p className="text-xl text-zinc-400 leading-relaxed mb-8 min-h-24">
