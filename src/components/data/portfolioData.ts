@@ -36,17 +36,30 @@ export const skills = {
   ],
   data: [
     // Lenguaje Base
-    { name: "Python", level: 85, icon: "logos:python" },
-    { name: "TensorFlow / Keras", level: 75, icon: "logos:tensorflow" },
-    { name: "Scikit-learn", level: 80, icon: "simple-icons:scikitlearn" },
-    { name: "Pandas & NumPy", level: 90, icon: "logos:pandas-icon" },
-    { name: "FastAPI", level: 70, icon: "logos:fastapi-icon" },
-    { name: "SQL (MySQL/PostgreSQL)", level: 85, icon: "logos:mysql-icon" },
-    { name: "Power BI", level: 75, icon: "logos:microsoft-power-bi" },
-    { name: "Azure Services", level: 60, icon: "logos:microsoft-azure" },
-    { name: "Git & GitHub", level: 80, icon: "mdi:github" },
-    { name: "Docker", level: 65, icon: "logos:docker-icon" },
-    { name: "Postman", level: 85, icon: "logos:postman-icon" },
+    { name: "Python", level: 55, icon: "logos:python" },
+    {
+      name: "TensorFlow / Keras (En aprendizaje)",
+      level: 35,
+      icon: "logos:tensorflow",
+    },
+    {
+      name: "Scikit-learn (En aprendizaje)",
+      level: 35,
+      icon: "simple-icons:scikitlearn",
+    },
+    { name: "Pandas & NumPy", level: 50, icon: "logos:pandas-icon" },
+    { name: "FastAPI", level: 37, icon: "logos:fastapi-icon" },
+    { name: "SQL (MySQL/PostgreSQL)", level: 50, icon: "logos:mysql-icon" },
+    { name: "Power BI", level: 35, icon: "logos:microsoft-power-bi" },
+    { name: "Azure Services", level: 40, icon: "logos:microsoft-azure" },
+    { name: "Git & GitHub", level: 70, icon: "mdi:github" },
+    { name: "Docker (En aprendizaje)", level: 10, icon: "logos:docker-icon" },
+    { name: "Postman", level: 65, icon: "logos:postman-icon" },
+    {
+      name: "Excel",
+      level: 40,
+      icon: "vscode-icons:file-type-excel",
+    },
   ],
 };
 

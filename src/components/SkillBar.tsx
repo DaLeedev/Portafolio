@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 interface SkillBarProps {
   name: string;
-  level: number; // 0-100
+  level: number;
   icon?: string;
 }
 
@@ -20,7 +20,6 @@ export function SkillBar({ name, level, icon }: SkillBarProps) {
     <div className="space-y-3">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {/* CORRECCIÓN: Renderizamos el componente Icon de Iconify */}
           {icon && (
             <span className="text-xl flex items-center justify-center">
               <Icon icon={icon} />
@@ -37,7 +36,7 @@ export function SkillBar({ name, level, icon }: SkillBarProps) {
       </div>
       <div className="relative h-2 bg-zinc-800 rounded-full overflow-hidden border border-zinc-700/30">
         <div
-          className="absolute top-0 left-0 h-full bg-linear-to-r from-purple-600/50 to-purple-400/0 rounded-full transition-all duration-1000 ease-out"
+          className="absolute top-0 left-0 h-full bg-linear-to-r from-purple-600/60 to-purple-400/5 rounded-full transition-all duration-1000 ease-out"
           style={{ width: `${level}%` }}
         >
           <div className="absolute inset-0 bg-white/20 animate-pulse" />
