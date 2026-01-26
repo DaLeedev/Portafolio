@@ -10,8 +10,8 @@ export const Hero = ({ currentProfile }: HeroProps) => {
     ? personalInfo.profiles[currentProfile]
     : null;
 
-  // Lógica para el color del brillo (Glow) detrás de la foto
-  // Si es Web -> Verde. Si es Data -> Azul. Si es nada -> Zinc/Gris.
+
+  // Si es Web -> Verde. Si es Data -> Azul.
   const glowColor =
     currentProfile === "web"
       ? "from-emerald-600 to-green-600"

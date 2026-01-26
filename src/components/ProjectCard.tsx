@@ -1,4 +1,5 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { Icon } from "@iconify/react";
 
 interface ProjectCardProps {
   title: string;
@@ -9,65 +10,61 @@ interface ProjectCardProps {
   githubLink?: string;
 }
 
-export function ProjectCard({ 
-  title, 
-  description, 
-  image, 
+export function ProjectCard({
+  title,
+  description,
+  image,
   technologies,
   liveLink,
-  githubLink 
+  githubLink
 }: ProjectCardProps) {
   return (
     <div className="group relative bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10">
       <div className="relative h-64 overflow-hidden">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+        <div className="absolute inset-0 bg-linear-to-t from-zinc-900 via-zinc-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
       </div>
-      
+
       <div className="p-6 space-y-4">
         <div className="flex items-start justify-between gap-4">
           <h3 className="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors">
             {title}
           </h3>
           <div className="flex gap-2 shrink-0">
-            {githubLink && (
-              <a 
+              <a
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
                 aria-label="Ver código en GitHub"
               >
-                <Github className="w-4 h-4 text-zinc-300" />
+                <Icon icon="mdi:github" className="w-5 h-5 text-zinc-300 cursor-pointer scale-105" />
               </a>
-            )}
-            {liveLink && (
-              <a 
+              <a
                 href={liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
                 aria-label="Ver proyecto en vivo"
               >
-                <ExternalLink className="w-4 h-4 text-zinc-300" />
+                <Icon icon="mdi:external-link" className="w-5 h-5 text-zinc-300 cursor-pointer scale-105" />
               </a>
-            )}
           </div>
         </div>
-        
-        <p className="text-zinc-400 leading-relaxed">
+
+        <p className="text-zinc-400 leading-relaxed text-md">
           {description}
         </p>
-        
+
         <div className="flex flex-wrap gap-2 pt-2">
           {technologies.map((tech, index) => (
-            <span 
+            <span
               key={index}
-              className="px-3 py-1 bg-zinc-800 text-purple-300 text-sm rounded-full border border-zinc-700 hover:border-purple-500/50 transition-colors"
+              className="px-3 py-1 bg-zinc-800 text-purple-300 text-sm rounded-full border border-zinc-700 hover:border-purple-500/70 hover:bg-purple-400/20 transition-colors"
             >
               {tech}
             </span>
