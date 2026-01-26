@@ -4,7 +4,7 @@
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 | Área | Tecnologías |
 | :--- | :--- |
