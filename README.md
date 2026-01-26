@@ -24,8 +24,9 @@
 
 ## Mi Actividad en GitHub
 
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=[DaLeedev]&show_icons=true&theme=tokyonight)
-![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=[DaLeedev]&layout=compact&theme=tokyonight)
+![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=DaLeedev&show_icons=true&theme=tokyonight)
+
+![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=DaLeedev&layout=compact&theme=tokyonight)
 
 ---
 
