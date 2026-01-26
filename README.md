@@ -28,6 +28,7 @@
 | **[Agente SQL - Moda Tech](https://daleedev.github.io/Portafolio/)** | `Groq` `FastAPI` `React` | GenAI / Text-to-SQL |
 | **[Predicción Deserción Escolar](https://daleedev.github.io/Portafolio/)** | `Scikit-Learn` `KDD` `Python` | Investigación / Social |
 | **[Predicción CLTV (6 Meses)](https://daleedev.github.io/Portafolio/)** | `TensorFlow` `Deep Learning` | Business Analytics |
+| **[Dashboard BI - Retail Strategy](https://daleedev.github.io/Portafolio/)** | `Power BI` `DAX` `Star Schema` | Business Intelligence |
 
 <br>
 
