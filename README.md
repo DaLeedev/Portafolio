@@ -1,6 +1,6 @@
 # Portafolio de Proyectos: IA, Data Science & Web Dev
 
-¡Hola! Soy **[Tu Nombre]**, apasionado por transformar datos en decisiones y construir soluciones tecnológicas de extremo a extremo. En este repositorio encontrarás una selección de mis mejores trabajos.
+¡Hola! Soy **Luis David Lemus Perea**, apasionado por transformar datos en decisiones y construir soluciones tecnológicas de extremo a extremo. En este repositorio encontrarás una selección de mis mejores trabajos.
 
 ---
 
