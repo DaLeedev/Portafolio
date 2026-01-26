@@ -1,5 +1,3 @@
-
-
 // 1. INFORMACIÓN PERSONAL (Doble personalidad)
 export const personalInfo = {
   name: "Luis David Lemus Perea",
@@ -14,14 +12,14 @@ export const personalInfo = {
     },
   },
   social: {
-    email: "tu@email.com",
-    github: "github.com/DaLeedev",
-    linkedin: "linkedin.com/...",
+    email: "luisdlperea96@gmail.com",
+    github: "https://github.com/DaLeedev",
+    linkedin: "https://www.linkedin.com/in/luis-david-lemus-perea-6497453a3/",
   },
-  profileImage: "",
-  email: "tu-email@ejemplo.com",
+  profileImage: "images/perfil/perfil-blank.jpg",
+  email: "luisdlperea96@gmail.com",
   github: "https://github.com/DaLeedev",
-  linkedin: "https://linkedin.com/in/tu-perfil",
+  linkedin: "https://www.linkedin.com/in/luis-david-lemus-perea-6497453a3/",
 };
 
 // 2. SKILLS (Separadas)
@@ -36,7 +34,7 @@ export const skills = {
   ],
   data: [
     // Lenguaje Base
-    { name: "Python", level: 55, icon: "logos:python" },
+    { name: "Python", level: 60, icon: "logos:python" },
     {
       name: "TensorFlow / Keras (En aprendizaje)",
       level: 35,
@@ -57,7 +55,7 @@ export const skills = {
     { name: "Postman", level: 65, icon: "logos:postman-icon" },
     {
       name: "Excel",
-      level: 40,
+      level: 45,
       icon: "vscode-icons:file-type-excel",
     },
   ],
@@ -150,6 +148,7 @@ export const certificates = {
       credentialUrl: "#",
       issuer: "Amazon Web Services",
       date: "Noviembre 2025",
+      iconName: "mdi:school-outline",
     },
     {
       title: "Meta Frontend Developer",
@@ -158,6 +157,7 @@ export const certificates = {
       credentialUrl: "#",
       issuer: "Amazon Web Services",
       date: "Noviembre 2025",
+      iconName: "mdi:school-outline",
     },
     {
       title: "IBM Data Science",
@@ -178,180 +178,61 @@ export const certificates = {
   ],
   data: [
     {
-      title: "IBM Data Science",
+      title: "Inteligencia Artificial Nivel Básico",
       description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+        "Certificación fundamental en conceptos de IA a nivel exploratorio.",
+      credentialUrl:
+        "https://github.com/DaLeedev/Certificados/blob/main/Inteligencia%20Artificial/Certificado%20IU%20Training%20-%20CC%201003933065.pdf",
+      issuer: "IU Training",
+      date: "4 de Septiembre de 2025",
+      iconName: "mdi:school-outline",
     },
     {
-      title: "IBM Data Science",
-      description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+      title: "Python for Data Science, AI & Development",
+      description: "Desarrollo con Python aplicado a ciencia de datos e IA.",
+      credentialUrl:
+        "https://github.com/DaLeedev/Certificados/blob/main/Inteligencia%20Artificial/IBM%20-%20Python%20for%20Data%20Science%2C%20AI%20%26%20Development.pdf",
+      issuer: "IBM",
+      date: "27 de Diciembre de 2025",
+      iconName: "simple-icons:ibm",
     },
     {
-      title: "IBM Data Science",
-      description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+      title: "Create Machine Learning Models in Microsoft Azure",
+      description: "Creación y despliegue de modelos de ML en la nube.",
+      credentialUrl:
+        "https://github.com/DaLeedev/Certificados/blob/main/Inteligencia%20Artificial/Microsoft%20-%20Create%20Machine%20Learning%20Models%20in%20Microsoft%20Azure.pdf",
+      issuer: "Microsoft",
+      date: "23 de Septiembre de 2025",
+      iconName: "logos:microsoft-icon",
     },
     {
-      title: "IBM Data Science",
+      title: "IA generativa más allá del chatbot",
       description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+        "Aplicaciones avanzadas de Inteligencia Artificial Generativa.",
+      credentialUrl:
+        "https://github.com/DaLeedev/Certificados/blob/main/Inteligencia%20Artificial/Google%20Cloud%20-%20IA%20generativa%20mas%20alla%20del%20chatbot.pdf",
+      issuer: "Google Cloud",
+      date: "18 de Enero de 2026",
+      iconName: "logos:google-cloud",
     },
     {
-      title: "IBM Data Science",
-      description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+      title: "IA generativa, descubre los conceptos fundamentales",
+      description: "Fundamentos teóricos y prácticos de la IA Generativa.",
+      credentialUrl:
+        "https://github.com/DaLeedev/Certificados/blob/main/Inteligencia%20Artificial/Google%20Cloud%20-%20IA%20generativa%2C%20descubre%20los%20conceptos%20fundamentales.pdf",
+      issuer: "Google Cloud",
+      date: "22 de Enero de 2026",
+      iconName: "logos:google-cloud",
     },
     {
-      title: "IBM Data Science",
+      title: "What is Data Science",
       description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+        "Visión global sobre la ciencia de datos y sus metodologías.",
+      credentialUrl:
+        "https://github.com/DaLeedev/Certificados/blob/main/Ciencia%20de%20Datos/IBM%20-%20What%20is%20Data%20Science.pdf",
+      issuer: "IBM",
+      date: "6 de Octubre de 2025",
+      iconName: "simple-icons:ibm",
     },
   ],
 };
-
-// export const personalInfo = {
-//   name: "Tu Nombre",
-//   profiles: {
-//     web: {
-//       role: "Desarrollador Full Stack",
-//       bio: "Creando experiencias digitales innovadoras con código limpio y diseño intuitivo.",
-//       color: "text-green-400",
-//     },
-//     data: {
-//       role: "Científico de Datos & ML",
-//       bio: "Transformando datos complejos en decisiones estratégicas con Inteligencia Artificial.",
-//       color: "text-blue-400",
-//     },
-//   },
-//   profileImage: "",
-//   email: "tu-email@ejemplo.com",
-//   github: "https://github.com/tu-usuario",
-//   linkedin: "https://linkedin.com/in/tu-perfil",
-// };
-
-// // Habilidades de programación
-// export const programmingSkills = [
-//   { name: "JavaScript", level: 90, icon: "🟨" },
-//   { name: "TypeScript", level: 85, icon: "🔷" },
-//   { name: "Python", level: 80, icon: "🐍" },
-//   { name: "React", level: 90, icon: "⚛️" },
-//   { name: "Node.js", level: 85, icon: "🟢" },
-//   { name: "Next.js", level: 80, icon: "▲" }
-// ];
-
-// // Herramientas y tecnologías
-// export const toolsSkills = [
-//   { name: "Git & GitHub", level: 90, icon: "📦" },
-//   { name: "Tailwind CSS", level: 85, icon: "🎨" },
-//   { name: "PostgreSQL", level: 75, icon: "🐘" },
-//   { name: "MongoDB", level: 70, icon: "🍃" },
-//   { name: "Docker", level: 65, icon: "🐳" },
-//   { name: "AWS", level: 60, icon: "☁️" }
-// ];
-
-// // Certificados
-// export const certificates = [
-//   {
-//     title: "AWS Certified Solutions Architect",
-//     issuer: "Amazon Web Services",
-//     date: "Enero 2026",
-//     description: "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-//     credentialUrl: "#",
-//     area: "Cloud Computing"
-//   },
-//   {
-//     title: "React Developer Certification",
-//     issuer: "Meta",
-//     date: "Noviembre 2025",
-//     description: "Certificación avanzada en desarrollo de aplicaciones con React y mejores prácticas.",
-//     credentialUrl: "#",
-//     area: "Desarrollo Frontend"
-//   },
-//   {
-//     title: "Professional Scrum Master I",
-//     issuer: "Scrum.org",
-//     date: "Agosto 2025",
-//     description: "Certificación en metodologías ágiles y gestión de proyectos con Scrum.",
-//     credentialUrl: "#",
-//     area: "Gestión de Proyectos"
-//   },
-//   {
-//     title: "Google UX Design Certificate",
-//     issuer: "Google",
-//     date: "Mayo 2025",
-//     description: "Programa profesional en diseño de experiencia de usuario y prototipado.",
-//     credentialUrl: "#",
-//     area: "UX/UI Design"
-//   },
-//   {
-//     title: "MongoDB Developer Certification",
-//     issuer: "MongoDB University",
-//     date: "Marzo 2025",
-//     description: "Certificación en diseño de bases de datos NoSQL y optimización de consultas.",
-//     credentialUrl: "#",
-//     area: "Bases de Datos"
-//   },
-//   {
-//     title: "Cybersecurity Fundamentals",
-//     issuer: "CompTIA",
-//     date: "Enero 2025",
-//     description: "Certificación en fundamentos de seguridad informática y mejores prácticas.",
-//     credentialUrl: "#",
-//     area: "Seguridad"
-//   }
-// ];
-// // ========== FIN DE CONFIGURACIÓN PERSONAL ==========
-
-// export const projects = [
-//   {
-//     title: "Dashboard Analítico",
-//     description: "Plataforma de análisis de datos en tiempo real con visualizaciones interactivas y métricas personalizables para empresas.",
-//     image: "https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkYXNoYm9hcmR8ZW58MXx8fHwxNzY3Nzg1MjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-//     technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js", "Node.js"],
-//     liveLink: "#",
-//     githubLink: "#"
-//   },
-//   {
-//     title: "App Móvil de Productividad",
-//     description: "Aplicación móvil para gestión de tareas y productividad personal con sincronización en la nube y notificaciones inteligentes.",
-//     image: "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY3Nzg2MDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-//     technologies: ["React Native", "Firebase", "Redux", "JavaScript"],
-//     liveLink: "#",
-//     githubLink: "#"
-//   },
-//   {
-//     title: "E-Commerce Platform",
-//     description: "Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos integrada y panel de administración.",
-//     image: "https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc2NzgzNTYxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-//     technologies: ["Next.js", "PostgreSQL", "Stripe", "Prisma", "TypeScript"],
-//     liveLink: "#",
-//     githubLink: "#"
-//   },
-//   {
-//     title: "Sistema de Visualización de Datos",
-//     description: "Herramienta para análisis y visualización de grandes conjuntos de datos con gráficos interactivos y exportación de reportes.",
-//     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3Njc4NDg0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-//     technologies: ["Python", "D3.js", "React", "FastAPI", "MongoDB"],
-//     liveLink: "#",
-//     githubLink: "#"
-//   }
-// ];

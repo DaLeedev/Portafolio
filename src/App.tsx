@@ -68,7 +68,7 @@ export default function App() {
 
               <div className="flex flex-col sm:flex-row gap-8 justify-center">
                 <button
-                  onClick={() => setProfile("web")}
+                  // onClick={() => setProfile("web")}
                   className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800  transition-all duration-500 w-full sm:w-80 cursor-pointer overflow-hidden flex flex-col items-center"
                 >
                   {/* Título */}

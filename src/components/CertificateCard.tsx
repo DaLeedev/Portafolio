@@ -1,4 +1,5 @@
 import { Award, Calendar, ExternalLink } from 'lucide-react';
+import { Icon } from "@iconify/react";
 
 interface CertificateCardProps {
   title: string;
@@ -7,6 +8,7 @@ interface CertificateCardProps {
   description?: string;
   credentialUrl?: string;
   area: string;
+  iconName?: string;
 }
 
 export function CertificateCard({
@@ -15,7 +17,8 @@ export function CertificateCard({
   date,
   description,
   credentialUrl,
-  area
+  area,
+  iconName
 }: CertificateCardProps) {
   return (
     <div className="bg-zinc-900 rounded-xl p-6 border border-zinc-800 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 group">
@@ -28,7 +31,10 @@ export function CertificateCard({
             <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-purple-400 transition-colors">
               {title}
             </h3>
-            <p className="text-purple-300 text-sm font-medium">{issuer}</p>
+            <div className="flex items-center gap-2">
+              {iconName && <Icon icon={iconName} className="w-6 h-6 text-purple-400" />}
+              <p className="text-purple-300 text-sm font-medium">{issuer}</p>
+            </div>
           </div>
         </div>
         {credentialUrl && (
