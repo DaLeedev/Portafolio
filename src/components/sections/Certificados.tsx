@@ -2,6 +2,7 @@
 import { certificates } from "../data/portfolioData";
 import { Award } from "lucide-react";
 import { CertificateCard } from "../CertificateCard"; // Asegúrate que la ruta sea correcta
+import { Icon } from "@iconify/react";
 
 interface CertificadosProps {
   currentProfile: "web" | "data"; // Ya no aceptamos null porque esta sección no se renderiza si es null
@@ -45,9 +46,30 @@ export const Certificados = ({ currentProfile }: CertificadosProps) => {
               description={cert.description || ""}
               credentialUrl={cert.credentialUrl || ""}
               area={currentProfile === "web" ? "Frontend/Backend" : "Data/ML"}
+              iconName={cert.iconName || ""}
             />
           ))}
         </div>
+      </div>
+
+      <div className="flex justify-center w-full mt-16">
+        <a
+          href="https://github.com/DaLeedev/Certificados"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative inline-flex items-center gap-2 px-6 py-3 bg-purple-500/10 border border-purple-500/20 rounded-full overflow-hidden transition-all duration-300 hover:bg-purple-500/20 hover:border-purple-500/40 hover:scale-103 active:scale-95"
+        >
+          <div className="absolute inset-0 bg-linear-to-r from-transparent via-purple-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+
+          <span className="relative text-purple-300 font-medium group-hover:text-blue-100 transition-colors">
+            Ver todos los certificados
+          </span>
+
+          <Icon
+            icon="mdi:arrow-right"
+            className="relative w-5 h-5 text-purple-400 group-hover:translate-x-1 transition-transform"
+          />
+        </a>
       </div>
     </section>
   );
