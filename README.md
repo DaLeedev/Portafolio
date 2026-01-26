@@ -16,9 +16,20 @@
 
 ## Proyectos Destacados
 
-### Inteligencia Artificial & ML
-> Proyectos enfocados en modelos predictivos, visión computacional y procesamiento de lenguaje natural.
+> **VISITA MI PORTAFOLIO INTERACTIVO:** > Encuentra demos en vivo, dashboards y documentación detallada de mis proyectos.
+>
+> **[https://daleedev.github.io/Portafolio/](https://daleedev.github.io/Portafolio/)**
 
+### Inteligencia Artificial & ML
+> *Proyectos enfocados en modelos predictivos, agentes autónomos y procesamiento de lenguaje natural.*
+
+| Proyecto | Tecnologías | Tipo |
+| :--- | :--- | :--- |
+| **[Agente SQL - Moda Tech](https://daleedev.github.io/Portafolio/)** | `Groq` `FastAPI` `React` | GenAI / Text-to-SQL |
+| **[Predicción Deserción Escolar](https://daleedev.github.io/Portafolio/)** | `Scikit-Learn` `KDD` `Python` | Investigación / Social |
+| **[Predicción CLTV (6 Meses)](https://daleedev.github.io/Portafolio/)** | `TensorFlow` `Deep Learning` | Business Analytics |
+
+<br>
 
 ---
 
