@@ -9,7 +9,7 @@
 | Área | Tecnologías |
 | :--- | :--- |
 | **IA & Machine Learning** | Python, TensorFlow, Scikit-Learn, Keras |
-| **Data Science** | Pandas, NumPy, SQL, Power BI, Matplotlib, Seaborn, DAX |
+| **Data Science** | Pandas, NumPy, SQL, Power BI, Excel, Seaborn, DAX |
 | **Herramientas** | Git, Docker, Microsoft Azure |
 
 ---
