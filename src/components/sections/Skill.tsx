@@ -5,7 +5,7 @@ import { SkillBar } from "../SkillBar";
 
 // Definimos la interfaz para las props
 interface SkillProps {
-  currentProfile: "web" | "data";
+  currentProfile: "ml" | "data";
 }
 
 export const Skill = ({ currentProfile }: SkillProps) => {
@@ -32,8 +32,8 @@ export const Skill = ({ currentProfile }: SkillProps) => {
             </span>
           </div>
           <h2 className="text-4xl font-bold mb-4">
-            {currentProfile === "web"
-              ? "Stack de Desarrollo"
+            {currentProfile === "ml"
+              ? "Stack de Machine Learning"
               : "Stack de Datos e IA"}
           </h2>
           <p className="text-zinc-400 text-lg">

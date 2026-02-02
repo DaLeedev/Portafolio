@@ -5,7 +5,7 @@ import { CertificateCard } from "../CertificateCard"; // Asegúrate que la ruta 
 import { Icon } from "@iconify/react";
 
 interface CertificadosProps {
-  currentProfile: "web" | "data"; // Ya no aceptamos null porque esta sección no se renderiza si es null
+  currentProfile: "ml" | "data"; // Ya no aceptamos null porque esta sección no se renderiza si es null
 }
 
 export const Certificados = ({ currentProfile }: CertificadosProps) => {
@@ -31,7 +31,7 @@ export const Certificados = ({ currentProfile }: CertificadosProps) => {
           <p className="text-zinc-400 text-lg">
             Reconocimientos que validan mi experiencia en{" "}
             <span className="text-purple-400 font-medium">
-              {currentProfile === "web" ? "Desarrollo Web" : "Ciencia de Datos"}
+              {currentProfile === "ml" ? "Machine Learning" : "Ciencia de Datos"}
             </span>
           </p>
         </div>
@@ -45,7 +45,7 @@ export const Certificados = ({ currentProfile }: CertificadosProps) => {
               date={cert.date || ""}
               description={cert.description || ""}
               credentialUrl={cert.credentialUrl || ""}
-              area={currentProfile === "web" ? "Frontend/Backend" : "Data/ML"}
+              area={currentProfile === "ml" ? "Machine Learning" : "Data/ML"}
               iconName={cert.iconName || ""}
             />
           ))}
