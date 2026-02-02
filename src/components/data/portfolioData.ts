@@ -2,9 +2,9 @@
 export const personalInfo = {
   name: "Luis David Lemus Perea",
   profiles: {
-    web: {
-      role: "Desarrollador Full Stack",
-      bio: "Especialista en arquitecturas escalables con React y Laravel. Me enfoco en código limpio y UX.",
+    ml: {
+      role: "Ingeniero de Machine Learning",
+      bio: "Especialista en desarrollo y despliegue de modelos de Machine Learning. Me enfoco en crear soluciones predictivas escalables utilizando Python, TensorFlow y Scikit-learn.",
     },
     data: {
       role: "Desarrollador de IA y Datos",
@@ -24,13 +24,13 @@ export const personalInfo = {
 
 // 2. SKILLS (Separadas)
 export const skills = {
-  web: [
-    { name: "React", level: 90, icon: "logos:react" },
-    { name: "Laravel", level: 85, icon: "logos:laravel" },
-    { name: "Tailwind CSS", level: 90, icon: "logos:tailwindcss-icon" },
-    { name: "MySQL", level: 85, icon: "logos:mysql-icon" },
-    { name: "Sass / SCSS", level: 80, icon: "logos:sass" },
-    { name: "JavaScript", level: 85, icon: "logos:javascript" },
+  ml: [
+    { name: "Python", level: 85, icon: "logos:python" },
+    { name: "TensorFlow / Keras", level: 80, icon: "logos:tensorflow" },
+    { name: "Scikit-learn", level: 85, icon: "simple-icons:scikitlearn" },
+    { name: "PyTorch", level: 75, icon: "logos:pytorch-icon" },
+    { name: "Pandas & NumPy", level: 90, icon: "logos:pandas-icon" },
+    { name: "Jupyter Notebooks", level: 85, icon: "logos:jupyter" },
   ],
   data: [
     // Lenguaje Base
@@ -63,27 +63,45 @@ export const skills = {
 
 // 3. PROYECTOS (Separados)
 export const projects = {
-  web: [
+  ml: [
     {
-      title: "E-Commerce Pro",
-      description: "Tienda online completa con pasarela de pagos.",
-      technologies: ["Next.js", "Stripe", "PostgreSQL"],
-      image: "url_img_web_1",
-      link: "#",
+      title: "Predicción CLTV - Deep Learning",
+      description:
+        "Sistema predictivo para estimar el valor monetario futuro de clientes (6 meses) usando Redes Neuronales (MLP) y Ventanas Deslizantes. Incluye un pipeline completo: limpieza, ingeniería de características, API con FastAPI y Dashboard en React.",
+      technologies: [
+        "TensorFlow/Keras",
+        "FastAPI",
+        "React",
+        "Pandas",
+        "Ventanas Deslizantes",
+      ],
+      image: "images/demo_cltv.gif",
+      liveLink: "https://daleedev.github.io/Deploy-CLTV-Frontend/",
+      githubLink: "https://github.com/DaLeedev/CLTV_PROJECT",
     },
     {
-      title: "Dashboard SaaS",
-      description: "Panel administrativo para gestión de usuarios.",
-      technologies: ["React", "Laravel", "Tremor"],
-      image: "url_img_web_2",
-      link: "#",
+      title: "Predicción Deserción Escolar - Colombia",
+      description:
+        "Investigación aplicada bajo metodología KDD que correlaciona variables socioeconómicas y del conflicto armado con el abandono escolar. Se evaluaron modelos de ML (XGBoost, Random Forest), logrando un R² de 0.77 con Regresión Lineal, desplegado en una web interactiva para consulta pública.",
+      technologies: [
+        "Scikit-Learn",
+        "KDD Methodology",
+        "Python",
+        "React",
+        "FastAPI",
+      ],
+      image: "images/demo_desercion.gif",
+      liveLink: "https://daleedev.github.io/desercion-escolar-ia-web/",
+      githubLink: "https://github.com/DaLeedev/Prediccion_desercion_escolar",
     },
     {
-      title: "Dashboard SaaS",
-      description: "Panel administrativo para gestión de usuarios.",
-      technologies: ["React", "Laravel", "Tremor"],
-      image: "url_img_web_2",
-      link: "#",
+      title: "Modelo de Clasificación - Iris Dataset",
+      description:
+        "Implementación de múltiples algoritmos de clasificación para el dataset Iris. Comparación de precisión entre Regresión Logística, Random Forest y SVM con visualizaciones interactivas de los resultados.",
+      technologies: ["Scikit-Learn", "Matplotlib", "Seaborn", "Python"],
+      image: "images/ml_classification.png",
+      liveLink: "#",
+      githubLink: "#",
     },
   ],
   data: [
@@ -140,40 +158,42 @@ export const projects = {
 
 // 4. CERTIFICADOS (Separados)
 export const certificates = {
-  web: [
+  ml: [
     {
-      title: "Meta Frontend Developer",
+      title: "TensorFlow Developer Certificate",
       description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+        "Certificación profesional en desarrollo con TensorFlow para modelos de Deep Learning.",
       credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+      issuer: "TensorFlow",
+      date: "Enero 2026",
+      iconName: "logos:tensorflow",
+    },
+    {
+      title: "Machine Learning Specialization",
+      description:
+        "Especialización completa en algoritmos de Machine Learning y aplicaciones prácticas.",
+      credentialUrl: "#",
+      issuer: "DeepLearning.AI",
+      date: "Diciembre 2025",
       iconName: "mdi:school-outline",
     },
     {
-      title: "Meta Frontend Developer",
+      title: "Advanced Machine Learning on Azure",
       description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+        "Certificación avanzada en implementación y despliegue de modelos ML en Azure.",
       credentialUrl: "#",
-      issuer: "Amazon Web Services",
+      issuer: "Microsoft Azure",
       date: "Noviembre 2025",
-      iconName: "mdi:school-outline",
+      iconName: "logos:microsoft-azure",
     },
     {
-      title: "IBM Data Science",
+      title: "Python for Machine Learning",
       description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
+        "Curso especializado en Python para desarrollo de soluciones de Machine Learning.",
       credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
-    },
-    {
-      title: "IBM Data Science",
-      description:
-        "Certificación profesional en diseño de arquitecturas distribuidas y escalables en AWS.",
-      credentialUrl: "#",
-      issuer: "Amazon Web Services",
-      date: "Noviembre 2025",
+      issuer: "Python Institute",
+      date: "Octubre 2025",
+      iconName: "logos:python",
     },
   ],
   data: [

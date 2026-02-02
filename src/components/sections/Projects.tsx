@@ -2,7 +2,7 @@ import { projects } from "../data/portfolioData";
 import { ProjectCard } from "../ProjectCard";
 
 interface SectionProps {
-  currentProfile: "web" | "data";
+  currentProfile: "ml" | "data";
 }
 
 export const Projects = ({ currentProfile }: SectionProps) => {

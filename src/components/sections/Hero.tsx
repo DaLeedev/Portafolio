@@ -2,7 +2,7 @@ import { personalInfo } from "../data/portfolioData";
 import { User, Briefcase, HelpCircle } from "lucide-react";
 
 interface HeroProps {
-  currentProfile: "web" | "data" | null;
+  currentProfile: "ml" | "data" | null;
 }
 
 export const Hero = ({ currentProfile }: HeroProps) => {
@@ -11,9 +11,9 @@ export const Hero = ({ currentProfile }: HeroProps) => {
     : null;
 
 
-  // Si es Web -> Verde. Si es Data -> Azul.
+  // Si es ML -> Verde. Si es Data -> Azul.
   const glowColor =
-    currentProfile === "web"
+    currentProfile === "ml"
       ? "from-emerald-600 to-green-600"
       : currentProfile === "data"
       ? "from-blue-600 to-cyan-600"
