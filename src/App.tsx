@@ -10,11 +10,11 @@ import { ChevronDown, ChevronLeft } from "lucide-react";
 import { Icon } from "@iconify/react";
 
 export default function App() {
-  const [profile, setProfile] = useState<"web" | "data" | null>(null);
+  const [profile, setProfile] = useState<"ml" | "data" | null>(null);
 
   // Sobrescribimos las variables de tu CSS purple por las nuevas
   const getThemeStyles = () => {
-    if (profile === "web") {
+    if (profile === "ml") {
       return {
         // Reemplazamos los purples por tonos VERDES (Emerald)
         "--color-purple-400": "oklch(.792 .209 151.711)",
@@ -68,38 +68,38 @@ export default function App() {
 
               <div className="flex flex-col sm:flex-row gap-8 justify-center">
                 <button
-                  // onClick={() => setProfile("web")}
-                  className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800  transition-all duration-500 w-full sm:w-80 cursor-pointer overflow-hidden flex flex-col items-center"
+                  onClick={() => setProfile("ml")}
+                  className="group p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-zinc-800/80 transition-all duration-500 w-full sm:w-80 cursor-pointer overflow-hidden flex flex-col items-center"
                 >
                   {/* Título */}
-                  <h3 className="text-xl font-semibold text-gray-200 transition-colors duration-500 text-center leading-tight">
-                    Desarrollo Web Full Stack
+                  <h3 className="text-xl font-semibold text-gray-200 group-hover:text-emerald-400 transition-colors duration-500 text-center leading-tight">
+                    Machine Learning
                   </h3>
 
-                  {/* Contenedor de Tecnologías: React, Laravel, Bootstrap, Sass */}
+                  {/* Contenedor de Tecnologías: Python, TensorFlow, Scikit-learn, etc */}
                   <div className="flex justify-center items-center gap-5 mt-8 filter grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out">
                     <Icon
-                      icon="logos:laravel"
+                      icon="logos:python"
                       className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
-                      icon="logos:bootstrap"
-                      className="w-7 h-7 transition-transform duration-200 scale-110 group-hover:scale-120"
+                      icon="logos:tensorflow"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
-                      icon="logos:tailwindcss-icon"
-                      className="w-7 h-7 transition-transform duration-200 scale-110 group-hover:scale-120"
+                      icon="simple-icons:scikitlearn"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
-                      icon="logos:javascript"
-                      className="w-7 h-7 transition-transform duration-200 scale-85 group-hover:scale-100"
+                      icon="logos:pandas-icon"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
-                      icon="logos:mysql"
-                      className="w-7 h-7 transition-transform duration-200 scale-120 group-hover:scale-130"
+                      icon="logos:jupyter"
+                      className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                     <Icon
-                      icon="logos:react"
+                      icon="logos:numpy"
                       className="w-7 h-7 transition-transform duration-200 group-hover:scale-110"
                     />
                   </div>

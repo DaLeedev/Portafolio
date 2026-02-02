@@ -1,62 +1,53 @@
-# 🚀 Portafolio de Proyectos: IA, Data Science & Web Dev
+# Portafolio de Proyectos: IA, Data Science & Web Dev
 
-¡Hola! Soy **[Tu Nombre]**, apasionado por transformar datos en decisiones y construir soluciones tecnológicas de extremo a extremo. En este repositorio encontrarás una selección de mis mejores trabajos.
+¡Hola! Soy **Luis David Lemus Perea**, apasionado por transformar datos en decisiones y construir soluciones tecnológicas de extremo a extremo. En este repositorio encontrarás una selección de mis mejores trabajos.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 | Área | Tecnologías |
 | :--- | :--- |
-| **IA & Machine Learning** | Python, TensorFlow, PyTorch, Scikit-Learn, Keras |
-| **Data Science** | Pandas, NumPy, SQL, Power BI, Matplotlib, Seaborn |
-| **Desarrollo Web** | React, Node.js, Flask, Django, HTML/CSS |
-| **Herramientas** | Git, Docker, AWS, Google Colab, Bash |
+| **IA & Machine Learning** | Python, TensorFlow, Scikit-Learn, Keras |
+| **Data Science** | Pandas, NumPy, SQL, Power BI, Excel, Seaborn, DAX |
+| **Herramientas** | Git, Docker, Microsoft Azure |
 
 ---
 
-## 📂 Proyectos Destacados
+## Proyectos Destacados
 
-### 🤖 Inteligencia Artificial & ML
-> Proyectos enfocados en modelos predictivos, visión computacional y procesamiento de lenguaje natural.
+> **VISITA MI PORTAFOLIO INTERACTIVO:** > Encuentra demos en vivo, dashboards y documentación detallada de mis proyectos.
+>
+> **[https://daleedev.github.io/Portafolio/](https://daleedev.github.io/Portafolio/)**
 
-* **[Nombre del Proyecto 1]**: Modelo de Deep Learning para la detección de [X].
-    * *Logro:* Precisión del 98% en el set de pruebas.
-    * [Ver código](link-al-repo)
-* **[Nombre del Proyecto 2]**: Clasificador de sentimientos utilizando NLP.
-    * [Ver código](link-al-repo)
+### Inteligencia Artificial & ML
+> *Proyectos enfocados en modelos predictivos, agentes autónomos y procesamiento de lenguaje natural.*
 
-### 📊 Ciencia de Datos
-> Análisis exploratorio, limpieza de datos (ETL) y visualizaciones interactivas.
+| Proyecto | Tecnologías | Tipo |
+| :--- | :--- | :--- |
+| **[Agente SQL - Moda Tech](https://daleedev.github.io/Portafolio/)** | `Groq` `FastAPI` `React` | GenAI / Text-to-SQL |
+| **[Predicción Deserción Escolar](https://daleedev.github.io/Portafolio/)** | `Scikit-Learn` `KDD` `Python` | Investigación / Social |
+| **[Predicción CLTV (6 Meses)](https://daleedev.github.io/Portafolio/)** | `TensorFlow` `Deep Learning` | Business Analytics |
+| **[Dashboard BI - Retail Strategy](https://daleedev.github.io/Portafolio/)** | `Power BI` `DAX` `Star Schema` | Business Intelligence |
 
-* **Análisis del Mercado Inmobiliario**: Limpieza de un dataset de 50,000 filas y predicción de precios.
-    * [Ver Notebook](link-al-notebook)
-* **Dashboard de Ventas**: Visualización automatizada de KPIs usando Python y Streamlit.
-    * [Ver código](link-al-repo)
-
-### 🌐 Desarrollo Web & Software
-> Aplicaciones Full-Stack y herramientas de automatización con Python.
-
-* **[Nombre de la App Web]**: Plataforma construida con React y un backend en Flask.
-    * [🌐 Demo en vivo](link-a-la-web)
-* **Automation Suite**: Scripts de Python para Web Scraping y automatización de reportes PDF.
-    * [Ver scripts](link-al-repo)
+<br>
 
 ---
 
-## 📈 Mi Actividad en GitHub
+## Mi Actividad en GitHub
 
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=[TU_USUARIO_DE_GITHUB]&show_icons=true&theme=tokyonight)
-![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=[TU_USUARIO_DE_GITHUB]&layout=compact&theme=tokyonight)
+![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=DaLeedev&show_icons=true&theme=tokyonight)
+
+![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=DaLeedev&layout=compact&theme=tokyonight)
 
 ---
 
-## 📫 Hablemos
+## Hablemos
 Si te interesa colaborar o conocer más sobre mi trabajo, puedes contactarme aquí:
 
-* **LinkedIn**: [linkedin.com/in/[TU_PERFIL]](https://linkedin.com/in/[TU_PERFIL])
+* **LinkedIn**: [linkedin.com/in/[luis-david-lemus-perea-6497453a3]](https://linkedin.com/in/[luis-david-lemus-perea-6497453a3])
 * **Portfolio Web**: [www.tuweb.com](https://www.tuweb.com)
-* **Email**: [tu-correo@ejemplo.com](mailto:tu-correo@ejemplo.com)
+* **Email**: [tu-correo@ejemplo.com](mailto:luisdlperea96@gmail.com)
 
 ---
-⭐️ *Si te gusta mi trabajo, ¡siéntete libre de darle una estrella a mis repositorios!*
+*Si te gusta mi trabajo, ¡siéntete libre de darle una estrella a mis repositorios!*
