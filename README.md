@@ -46,7 +46,7 @@
 Si te interesa colaborar o conocer más sobre mi trabajo, puedes contactarme aquí:
 
 * **LinkedIn**: [linkedin.com/in/[luis-david-lemus-perea-6497453a3]](https://linkedin.com/in/[luis-david-lemus-perea-6497453a3])
-* **Portfolio Web**: [[www.tuweb.com](https://daleedev.github.io/Portafolio/)]([https://www.tuweb.com](https://daleedev.github.io/Portafolio/))
+* **Portfolio Web**: [[Web](https://daleedev.github.io/Portafolio/)]([Web](https://daleedev.github.io/Portafolio/))
 * **Email**: [luisdlperea96@gmail.com](mailto:luisdlperea96@gmail.com)
 
 ---
